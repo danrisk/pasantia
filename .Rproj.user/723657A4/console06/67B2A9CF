@@ -1,0 +1,82 @@
+]0;~/Documents/Pasantia[?1034hMacBook-Air-de-Danny:Pasantia danny$ tlmgr update --all
+tlmgr: Remote repository is newer than local (2017 < 2018)
+Cross release updates are only supported with
+  update-tlmgr-latest(.sh/.exe) --update
+Please see https://tug.org/texlive/upgrade.html for details.
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ ls
+Informe_Pasantia_RLiquidez	img
+Pasantia.Rproj
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ cd ..
+]0;~/DocumentsMacBook-Air-de-Danny:Documents danny$ cd ..
+]0;~MacBook-Air-de-Danny:~ danny$ ls
+Desktop			Music			flick.pdf
+Documents		Pictures		iCloud Drive (archivo)
+Downloads		Public			logs
+Google Drive		Untitled		runs
+Library			config.nice		spark
+Movies			derby.log		wrecord
+]0;~MacBook-Air-de-Danny:~ danny$ Library/
+bash: Library/: is a directory
+]0;~MacBook-Air-de-Danny:~ danny$ cd Library/
+]0;~/LibraryMacBook-Air-de-Danny:Library danny$ ls
+Accounts		GameKit			Printers
+Application Scripts	Google			PubSub
+Application Support	Group Containers	Safari
+Assistant		Icons			Saved Application State
+Assistants		IdentityServices	Screen Savers
+Audio			Input Methods		Scripts
+Autosave Information	Internet Plug-Ins	Services
+Caches			Keyboard		Sharing
+Calendars		Keyboard Layouts	Social
+CallServices		KeyboardServices	Sounds
+ColorPickers		Keychains		Speech
+Colors			LanguageModeling	Spelling
+Compositions		LaunchAgents		Suggestions
+Containers		Logs			SyncedPreferences
+Cookies			Mail			TeX
+CoreData		Mail Downloads		TeXShop
+CoreFollowUp		Maps			VirtualBox
+Developer		Messages		Voices
+Dictionaries		Metadata		WebKit
+Favorites		PDF Services		Workflows
+Filters			Passes			com.apple.nsurlsessiond
+FontCollections		Personas		iMovie
+Fonts			PreferencePanes		iTunes
+Fonts Disabled		Preferences		texlive
+]0;~/LibraryMacBook-Air-de-Danny:Library danny$ cd texlive/
+]0;~/Library/texliveMacBook-Air-de-Danny:texlive danny$ ls
+2012basic	2015basic	2016
+]0;~/Library/texliveMacBook-Air-de-Danny:texlive danny$ cp -a 2017 2018 
+cp: 2017: No such file or directory
+]0;~/Library/texliveMacBook-Air-de-Danny:texlive danny$ cd ..
+]0;~/LibraryMacBook-Air-de-Danny:Library danny$ cd ..
+]0;~MacBook-Air-de-Danny:~ danny$ cd ..p -a 2017 2018 ls[Kcd texlive/ls[Kcd Library/[3PLibrary/ls[Kcd ..[3Plstlmgr update --all[K[K[K[K[K[K[K[K[K[K[K[Kinstall flow
+You don't have permission to change the installation in any way,
+specifically, the directory /usr/local/texlive/2016/tlpkg/ is not writable.
+Please run this program as administrator, or contact your local admin.
+tlmgr: An error has occurred. See above messages. Exiting.
+]0;~MacBook-Air-de-Danny:~ danny$ sudo tlmgr install flow
+Password:
+tlmgr: Remote repository is newer than local (2017 < 2018)
+Cross release updates are only supported with
+  update-tlmgr-latest(.sh/.exe) --update
+Please see https://tug.org/texlive/upgrade.html for details.
+]0;~MacBook-Air-de-Danny:~ danny$ sh update-tlmgr-latest.sh -- --upgrade
+sh: update-tlmgr-latest.sh: No such file or directory
+]0;~MacBook-Air-de-Danny:~ danny$ tlmgr update --self --all
+tlmgr: Remote repository is newer than local (2017 < 2018)
+Cross release updates are only supported with
+  update-tlmgr-latest(.sh/.exe) --update
+Please see https://tug.org/texlive/upgrade.html for details.
+]0;~MacBook-Air-de-Danny:~ danny$ tlmgr update --self
+tlmgr: Remote repository is newer than local (2017 < 2018)
+Cross release updates are only supported with
+  update-tlmgr-latest(.sh/.exe) --update
+Please see https://tug.org/texlive/upgrade.html for details.
+]0;~MacBook-Air-de-Danny:~ danny$ [KMacBook-Air-de-Danny:~ danny$ tlmgr updatee --self --all[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh update-tlmgr-latest.sh -- --upgrade[A[C[C[C[Cudo tlmgr i[15Pnstall flow
+Password:
+tlmgr: Remote repository is newer than local (2017 < 2018)
+Cross release updates are only supported with
+  update-tlmgr-latest(.sh/.exe) --update
+Please see https://tug.org/texlive/upgrade.html for details.
+]0;~[?1034hMacBook-Air-de-Danny:~ danny$ 
