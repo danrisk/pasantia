@@ -79,4 +79,55 @@ tlmgr: Remote repository is newer than local (2017 < 2018)
 Cross release updates are only supported with
   update-tlmgr-latest(.sh/.exe) --update
 Please see https://tug.org/texlive/upgrade.html for details.
-]0;~[?1034hMacBook-Air-de-Danny:~ danny$ 
+]0;~/Documents/Pasantia[?1034hMacBook-Air-de-Danny:Pasantia danny$ git pull
+Already up-to-date.
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/723657A4/console06/67B2A9CF[m
+	[31mmodified:   .Rproj.user/723657A4/console06/67B2A9CF.env[m
+	[31mmodified:   .Rproj.user/723657A4/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/723657A4/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/723657A4/pcs/source-pane.pper[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/per/t/143E6F08[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/per/t/143E6F08-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/per/t/C7F7E8A7[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/per/t/C7F7E8A7-contents[m
+	[31mmodified:   .Rproj.user/723657A4/sources/prop/2BEA04E7[m
+	[31mmodified:   .Rproj.user/723657A4/sources/prop/INDEX[m
+	[31mmodified:   .Rproj.user/shared/notebooks/BA846903-Informe_Pasantia_RLiquidez/1/s/chunks.json[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mmodified:   Informe_Pasantia_RLiquidez/Informe_Pasantia_RLiquidez.pdf[m
+	[31mmodified:   Informe_Pasantia_RLiquidez/Informe_Pasantia_RLiquidez.tex[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/723657A4/persistent-state[m
+	[31m.Rproj.user/723657A4/sources/prop/1BD8A2A9[m
+	[31m.Rproj.user/723657A4/sources/prop/1EA023CA[m
+	[31m.Rproj.user/723657A4/sources/prop/235F9ED1[m
+	[31m.Rproj.user/723657A4/sources/prop/2FFE8CFF[m
+	[31m.Rproj.user/723657A4/sources/prop/3330F26E[m
+	[31m.Rproj.user/723657A4/sources/prop/3CEE9E53[m
+	[31m.Rproj.user/723657A4/sources/prop/621E0359[m
+	[31m.Rproj.user/723657A4/sources/prop/709EEA43[m
+	[31m.Rproj.user/723657A4/sources/prop/79FDB66C[m
+	[31m.Rproj.user/723657A4/sources/prop/86A8EC0D[m
+	[31m.Rproj.user/723657A4/sources/prop/A7C6BADF[m
+	[31m.Rproj.user/723657A4/sources/prop/B6C620F0[m
+	[31m.Rproj.user/723657A4/sources/prop/C0DA2057[m
+	[31m.Rproj.user/723657A4/sources/prop/C1AA1AC9[m
+	[31m.Rproj.user/723657A4/sources/prop/CA7F63A4[m
+	[31m.Rproj.user/723657A4/sources/prop/D3E8CDE9[m
+	[31m.Rproj.user/723657A4/sources/s-F736D794/[m
+	[31m.Rproj.user/shared/notebooks/BA846903-Informe_Pasantia_RLiquidez/1/723657A4F736D794/[m
+	[31mbancox.csv[m
+	[31mliquidaR/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ git add .

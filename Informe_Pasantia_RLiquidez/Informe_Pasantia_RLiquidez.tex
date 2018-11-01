@@ -802,6 +802,28 @@ que se utilizan métodos numéricos.
 \hypertarget{valor-en-riesgo-var}{%
 \section{Valor en Riesgo (VaR)}\label{valor-en-riesgo-var}}
 
+La probabilidad basada en modelos provee una descripción de la
+exposición al riesgo, el nivel de exposición de riesgo es frecuentemente
+descrito por un número o un pequeño conjunto de ellos; estos números son
+funciones (medidas) sobre el modelo elegido que muy frecuentemente son
+llamados \textbf{Indicadores Claves de Riesgo}. Estos indican el grado
+de materialización de un aspecto del riesgo en términos de las
+definición de un evento a caracterizar. En particular, se define el
+\textbf{VaR} o Valor a Riesgo como el percentil de la Distribución
+Agregada de Riesgo (Función de Distribución Acumulada), cuya
+interpretación es observada como \textbf{la posibilidad de obtener un
+resultado adverso}; este puede ser expresado a través del \textbf{VaR}
+con un particular nivel de probabilidad. El \textbf{VaR} en el área
+financiera suele ser utilizado para la determinación de un Monto o Nivel
+de Capital requerido para soportar dichos resultados adversos.
+
+Adicionalmente, definimos el Tail-Value-at-Risk \textbf{TVaR} o
+\textbf{VaR de Cola}, utilizada en varias áreas y nombrada de distintas
+maneras, entre las más frecuentes: Conditional-Value-at-Risk
+\textbf{CVaR} o \textbf{VaR Condicional}, Conditional Tail Expectation
+\textbf{CTE} y Expected Shortfall \textbf{ES} o Expectativa a Corto
+Plazo.
+
 El \textbf{VaR} o Valor en Riesgo ha resultado ser el estándar de
 medición para evaluar la exposición de Riesgo. En términos generales, el
 \textbf{VaR} es el monto de capital requerido para asegurar con cierto
@@ -2154,30 +2176,7 @@ del riesgo.
 la misma provee pruebas paramétricas de bondad de ajuste de
 distribuciones probabilísticas dado los datos o sus cuantiles. El
 algoritmo ajusta distribuciones sin necesidad de la sistencia del
-usuario y sin especificar ninguna familia de distribuciones.\\
-\#\# Var
-
-La probabilidad basada en modelos provee una descripción de la
-exposición al riesgo, el nivel de exposición de riesgo es frecuentemente
-descrito por un número o un pequeño conjunto de ellos; estos números son
-funciones (medidas) sobre el modelo elegido que muy frecuentemente son
-llamados \textbf{Indicadores Claves de Riesgo}. Estos indican el grado
-de materialización de un aspecto del riesgo en términos de las
-definición de un evento a caracterizar. En particular, se define el
-\textbf{VaR} o Valor a Riesgo como el percentil de la Distribución
-Agregada de Riesgo (Función de Distribución Acumulada), cuya
-interpretación es observada como \textbf{la posibilidad de obtener un
-resultado adverso}; este puede ser expresado a través del \textbf{VaR}
-con un particular nivel de probabilidad. El \textbf{VaR} en el área
-financiera suele ser utilizado para la determinación de un Monto o Nivel
-de Capital requerido para soportar dichos resultados adversos.
-
-Adicionalmente, definimos el Tail-Value-at-Risk \textbf{TVaR} o
-\textbf{VaR de Cola}, utilizada en varias áreas y nombrada de distintas
-maneras, entre las más frecuentes: Conditional-Value-at-Risk
-\textbf{CVaR} o \textbf{VaR Condicional}, Conditional Tail Expectation
-\textbf{CTE} y Expected Shortfall \textbf{ES} o Expectativa a Corto
-Plazo.
+usuario y sin especificar ninguna familia de distribuciones.
 
 \hypertarget{r-y-el-paquete-vares}{%
 \subsubsection{\texorpdfstring{R Y el Paquete

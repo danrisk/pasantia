@@ -1,0 +1,4 @@
+rendiAjusDist <- function(x){
+  y <- useFitdist(diff(log(x)))
+  return(y)
+}
