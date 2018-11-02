@@ -131,3 +131,172 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ git add .
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ git commit -m 'ag[K[Kagre[K[K[K[Kfinalizado informe agregando pack age and ppppppppppppp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kagregando paquete y data de ejemp lo'
+[master 5868141] agregando paquete y data de ejemplo
+ Committer: danrisk <danny@MacBook-Air-de-Danny.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 83 files changed, 2364 insertions(+), 40 deletions(-)
+ rewrite .Rproj.user/723657A4/console06/INDEX001 (83%)
+ create mode 100644 .Rproj.user/723657A4/persistent-state
+ create mode 100644 .Rproj.user/723657A4/sources/prop/1BD8A2A9
+ create mode 100644 .Rproj.user/723657A4/sources/prop/1EA023CA
+ create mode 100644 .Rproj.user/723657A4/sources/prop/235F9ED1
+ create mode 100644 .Rproj.user/723657A4/sources/prop/2FFE8CFF
+ create mode 100644 .Rproj.user/723657A4/sources/prop/3330F26E
+ create mode 100644 .Rproj.user/723657A4/sources/prop/3CEE9E53
+ create mode 100644 .Rproj.user/723657A4/sources/prop/621E0359
+ create mode 100644 .Rproj.user/723657A4/sources/prop/709EEA43
+ create mode 100644 .Rproj.user/723657A4/sources/prop/79FDB66C
+ create mode 100644 .Rproj.user/723657A4/sources/prop/86A8EC0D
+ create mode 100644 .Rproj.user/723657A4/sources/prop/A7C6BADF
+ create mode 100644 .Rproj.user/723657A4/sources/prop/B6C620F0
+ create mode 100644 .Rproj.user/723657A4/sources/prop/C0DA2057
+ create mode 100644 .Rproj.user/723657A4/sources/prop/C1AA1AC9
+ create mode 100644 .Rproj.user/723657A4/sources/prop/CA7F63A4
+ create mode 100644 .Rproj.user/723657A4/sources/prop/D3E8CDE9
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/104FA3DF-contents
+ rename .Rproj.user/723657A4/sources/{per/t => s-F736D794}/143E6F08 (81%)
+ rename .Rproj.user/723657A4/sources/{per/t => s-F736D794}/143E6F08-contents (100%)
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/17340D25-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/2B9CE7EC-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/2D24ED31-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/33E05114-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/37DB3008-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/3D7D0CBD-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/4CEE3E71-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/6D628CDA-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/78093A0A-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/80FC9BA7
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/80FC9BA7-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/85AF52CE-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/86AC9338-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/873A5DC4-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/8F83E83-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/91A32F38-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/91EA641B-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/9258253C-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/99C1734A-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/A0C7548E-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/A43DDF98-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/A5FB25CC-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/AAA2504C-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/BBC5B720-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/C1ED9E3D-contents
+ rename .Rproj.user/723657A4/sources/{per/t => s-F736D794}/C7F7E8A7 (96%)
+ rename .Rproj.user/723657A4/sources/{per/t => s-F736D794}/C7F7E8A7-contents (100%)
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/D8DB89EA-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/DFC861D6-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/E5E5DF46-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/EABF9C46-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/FD9543BB-contents
+ create mode 100644 .Rproj.user/723657A4/sources/s-F736D794/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/BA846903-Informe_Pasantia_RLiquidez/1/723657A4F736D794/chunks.json
+ create mode 100644 bancox.csv
+ create mode 100644 liquidaR/.Rbuildignore
+ create mode 100644 liquidaR/.gitignore
+ create mode 100644 liquidaR/DESCRIPTION
+ create mode 100644 liquidaR/NAMESPACE
+ create mode 100644 liquidaR/R/GAP.R
+ create mode 100644 liquidaR/R/TVaRL.R
+ create mode 100644 liquidaR/R/VaRL.R
+ create mode 100644 liquidaR/R/descriptivasPosicion.R
+ create mode 100644 liquidaR/R/frecuencia.R
+ create mode 100644 liquidaR/R/rendiajusdist.R
+ create mode 100644 liquidaR/R/rendimientos.R
+ create mode 100644 liquidaR/R/resultadoajustado.R
+ create mode 100644 liquidaR/data/ahorro.rda
+ create mode 100644 liquidaR/data/corriente.rda
+ create mode 100644 liquidaR/data/remunerada.rda
+ create mode 100644 liquidaR/demo/pruebaL.R
+ create mode 100644 liquidaR/liquidaR.Rproj
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ git push orin[Kgin master
+Counting objects: 70, done.
+Delta compression using up to 4 threads.
+Compressing objects:   1% (1/63)   Compressing objects:   3% (2/63)   Compressing objects:   4% (3/63)   Compressing objects:   6% (4/63)   Compressing objects:   7% (5/63)   Compressing objects:   9% (6/63)   Compressing objects:  11% (7/63)   Compressing objects:  12% (8/63)   Compressing objects:  14% (9/63)   Compressing objects:  15% (10/63)   Compressing objects:  17% (11/63)   Compressing objects:  19% (12/63)   Compressing objects:  20% (13/63)   Compressing objects:  22% (14/63)   Compressing objects:  23% (15/63)   Compressing objects:  25% (16/63)   Compressing objects:  26% (17/63)   Compressing objects:  28% (18/63)   Compressing objects:  30% (19/63)   Compressing objects:  31% (20/63)   Compressing objects:  33% (21/63)   Compressing objects:  34% (22/63)   Compressing objects:  36% (23/63)   Compressing objects:  38% (24/63)   Compressing objects:  39% (25/63)   Compressing objects:  41% (26/63)   Compressing objects:  42% (27/63)   Compressing objects:  44% (28/63)   Compressing objects:  46% (29/63)   Compressing objects:  47% (30/63)   Compressing objects:  49% (31/63)   Compressing objects:  50% (32/63)   Compressing objects:  52% (33/63)   Compressing objects:  53% (34/63)   Compressing objects:  55% (35/63)   Compressing objects:  57% (36/63)   Compressing objects:  58% (37/63)   Compressing objects:  60% (38/63)   Compressing objects:  61% (39/63)   Compressing objects:  63% (40/63)   Compressing objects:  65% (41/63)   Compressing objects:  66% (42/63)   Compressing objects:  68% (43/63)   Compressing objects:  69% (44/63)   Compressing objects:  71% (45/63)   Compressing objects:  73% (46/63)   Compressing objects:  74% (47/63)   Compressing objects:  76% (48/63)   Compressing objects:  77% (49/63)   Compressing objects:  79% (50/63)   Compressing objects:  80% (51/63)   Compressing objects:  82% (52/63)   Compressing objects:  84% (53/63)   Compressing objects:  85% (54/63)   Compressing objects:  87% (55/63)   Compressing objects:  88% (56/63)   Compressing objects:  90% (57/63)   Compressing objects:  92% (58/63)   Compressing objects:  93% (59/63)   Compressing objects:  95% (60/63)   Compressing objects:  96% (61/63)   Compressing objects:  98% (62/63)   Compressing objects: 100% (63/63)   Compressing objects: 100% (63/63), done.
+Writing objects:   1% (1/70)   Writing objects:   2% (2/70)   Writing objects:   4% (3/70)   Writing objects:   5% (4/70)   Writing objects:   7% (5/70)   Writing objects:   8% (6/70)   Writing objects:  10% (7/70)   Writing objects:  11% (8/70)   Writing objects:  12% (9/70)   Writing objects:  14% (10/70)   Writing objects:  15% (11/70)   Writing objects:  17% (12/70)   Writing objects:  18% (13/70)   Writing objects:  20% (14/70)   Writing objects:  21% (15/70)   Writing objects:  22% (16/70)   Writing objects:  24% (17/70)   Writing objects:  25% (18/70)   Writing objects:  27% (19/70)   Writing objects:  28% (20/70)   Writing objects:  30% (21/70)   Writing objects:  31% (22/70)   Writing objects:  32% (23/70)   Writing objects:  34% (24/70)   Writing objects:  35% (25/70)   Writing objects:  37% (26/70)   Writing objects:  38% (27/70)   Writing objects:  40% (28/70)   Writing objects:  41% (29/70)   Writing objects:  45% (32/70)   Writing objects:  48% (34/70)   Writing objects:  50% (35/70)   Writing objects:  51% (36/70)   Writing objects:  52% (37/70)   Writing objects:  54% (38/70)   Writing objects:  55% (39/70)   Writing objects:  57% (40/70)   Writing objects:  58% (41/70)   Writing objects:  60% (42/70)   Writing objects:  61% (43/70)   Writing objects:  62% (44/70)   Writing objects:  64% (45/70)   Writing objects:  65% (46/70)   Writing objects:  67% (47/70)   Writing objects:  68% (48/70)   Writing objects:  70% (49/70)   Writing objects:  71% (50/70)   Writing objects:  72% (51/70)   Writing objects:  74% (52/70)   Writing objects:  75% (53/70)   Writing objects:  77% (54/70)   Writing objects:  78% (55/70)   Writing objects:  80% (56/70)   Writing objects:  81% (57/70)   Writing objects:  82% (58/70)   Writing objects:  84% (59/70)   Writing objects:  85% (60/70)   Writing objects:  87% (61/70)   Writing objects:  88% (62/70)   Writing objects:  90% (63/70)   Writing objects:  91% (64/70)   Writing objects:  92% (65/70)   Writing objects:  94% (66/70)   Writing objects:  95% (67/70)   Writing objects:  97% (68/70)   Writing objects:  98% (69/70)   Writing objects: 100% (70/70)   Writing objects: 100% (70/70), 55.85 KiB | 0 bytes/s, done.
+Total 70 (delta 15), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/15)   [Kremote: Resolving deltas:  26% (4/15)   [Kremote: Resolving deltas:  40% (6/15)   [Kremote: Resolving deltas:  46% (7/15)   [Kremote: Resolving deltas:  53% (8/15)   [Kremote: Resolving deltas:  60% (9/15)   [Kremote: Resolving deltas:  66% (10/15)   [Kremote: Resolving deltas:  73% (11/15)   [Kremote: Resolving deltas:  80% (12/15)   [Kremote: Resolving deltas:  86% (13/15)   [Kremote: Resolving deltas:  93% (14/15)   [Kremote: Resolving deltas: 100% (15/15)   [Kremote: Resolving deltas: 100% (15/15), completed with 9 local objects.[K
+To https://github.com/danrisk/pasantia.git
+   7d585e2..5868141  master -> master
+]0;~/Documents/Pasantia[?1034hMacBook-Air-de-Danny:Pasantia danny$ git pull
+Already up-to-date.
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ git add[K[K[Kstatus
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/723657A4/console06/67B2A9CF[m
+	[31mmodified:   .Rproj.user/723657A4/console06/67B2A9CF.env[m
+	[31mmodified:   .Rproj.user/723657A4/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/723657A4/pcs/source-pane.pper[m
+	[31mmodified:   .Rproj.user/723657A4/pcs/workbench-pane.pper[m
+	[31mmodified:   .Rproj.user/723657A4/sources/prop/2BEA04E7[m
+	[31mmodified:   .Rproj.user/723657A4/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/104FA3DF-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/143E6F08[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/143E6F08-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/17340D25-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/2B9CE7EC-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/2D24ED31-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/33E05114-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/37DB3008-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/3D7D0CBD-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/4CEE3E71-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/6D628CDA-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/78093A0A-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/80FC9BA7[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/80FC9BA7-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/85AF52CE-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/86AC9338-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/873A5DC4-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/8F83E83-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/91A32F38-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/91EA641B-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/9258253C-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/99C1734A-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/A0C7548E-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/A43DDF98-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/A5FB25CC-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/AAA2504C-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/BBC5B720-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/C1ED9E3D-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/C7F7E8A7[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/C7F7E8A7-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/D8DB89EA-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/DFC861D6-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/E5E5DF46-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/EABF9C46-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/FD9543BB-contents[m
+	[31mdeleted:    .Rproj.user/723657A4/sources/s-F736D794/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mmodified:   Informe_Pasantia_RLiquidez/Informe_Pasantia_RLiquidez.pdf[m
+	[31mmodified:   Informe_Pasantia_RLiquidez/Informe_Pasantia_RLiquidez.tex[m
+	[31mmodified:   liquidaR/DESCRIPTION[m
+	[31mdeleted:    liquidaR/demo/pruebaL.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.RData[m
+	[31m.Rproj.user/723657A4/pcs/debug-breakpoints.pper[m
+	[31m.Rproj.user/723657A4/sources/prop/9807D709[m
+	[31m.Rproj.user/723657A4/sources/prop/B8B42CB5[m
+	[31m.Rproj.user/723657A4/sources/s-977D2E0D/[m
+	[31mliquidaR/R/VaRCompuesto.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/PasantiaMacBook-Air-de-Danny:Pasantia danny$ git add .
