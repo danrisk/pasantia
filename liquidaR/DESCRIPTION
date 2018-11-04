@@ -1,11 +1,15 @@
 Package: liquidaR
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Title: Marco de Riesgo de Liquidez desde la Perspectiva Actuarial
+Version: 1.0.0
+Authors@R: person("Danny", "Morales", email = "danactuarial@gmail.com", role = c("aut", "cre"))
+Description: El paquete contiene todas las funciones necesarias para 
+  desarrollar el marco de evaluación del Riesgo de LIquidez de Fondos
+  en el entorno Bancario desde el enfoque del Riesgo Financiero 
+  Actuarial y de Administración Integral del Riesgo, (AFIR-ERM).
 Depends: R (>= 3.4.0)
-License: What license is it under?
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
 Imports: actuar,
     rriskDistributions
+RoxygenNote: 6.1.0
