@@ -1,4 +1,4 @@
-\documentclass[10pt,]{article}
+\documentclass[]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -271,27 +271,22 @@ Bancario Nacional.
   criterios y actitudes dentro de la filosofía de la institución.
 \end{itemize}
 
-\hypertarget{estructura-organizativa.}{%
-\subsection{Estructura Organizativa.}\label{estructura-organizativa.}}
-
-Right Box This is the first box. Box 8 1 And this is the second
-
 \hypertarget{terminologia-basica.}{%
 \section{Terminología Básica.}\label{terminologia-basica.}}
 
-Ante de adentranos en el tema principal, vamos a realizar un repaso de
+Antes de adentrarnos en el tema principal, vamos a realizar un repaso de
 algunas definiciones que usaremos para definir toda la maquinaria que
-esta detras del riesgo de liquidez.
+esta detrás del riesgo de liquidez.
 
 \begin{itemize}
 \item
   \textbf{Banco} : Los Bancos son empresas que se dedican a realizar
   operaciones financieras con el dinero procedente de sus accionistas y
-  de los depósitos de sus clientes, de esta forma lo definine la Real
+  de los depósitos de sus clientes, de esta forma lo define la Real
   Academia Española. A partir de ahora consideraremos las instituciones
   que se rigen conforme a lo establecido en las leyes generales de los
   bancos, llamados Bancos Universales y microfinancieros, los mismos
-  están bajo la supervición de la SUDEBAN (Superintendencia de las
+  están bajo la supervisión de la SUDEBAN (Superintendencia de las
   Instituciones del Sector Bancario).
 \item
   \textbf{Fondos Bancarios} : Los bancos obtienen
@@ -395,7 +390,7 @@ esta detras del riesgo de liquidez.
   \textbf{partidas equivalentes de efectivo} a aquellas inversiones que
   son de gran liquidez y tienen con ellos riesgos pocos significativos.
   Otros activos líquidos son los llamados \textbf{pasivos de vencimiento
-  inmediato}, estos son activos vencidos contraidos por el banco, por lo
+  inmediato}, estos son activos vencidos contraídos por el banco, por lo
   tanto, se pueden reclamar en cualquier momento.
 \item
   \textbf{Razón de liquidez} : Este tasa nos dice la capacidad que tiene
@@ -520,9 +515,9 @@ trabajo tomaremos un enfoque actuarial AAFIR (Actuarial Approach
 Financial Risk), la cual implica que este supuesto es dinámico.
 Aplicaremos un conjunto de técnicas estadísticas desde estadística
 descriptiva, pasando por Pruebas de Bondad de Ajustes, Optimización de
-Parámetros, Criterios de entropía y simulación de variables aleatorias
-compuestas. Ademas todo este trabajo fue desarrollado en lenguaje R,
-siendo el resultado un paquete de R de nombre ``Rliquidez''.
+Parámetros y simulación de variables aleatorias compuestas. Ademas todo
+este trabajo fue desarrollado en lenguaje R, siendo el resultado un
+paquete de R de nombre \textbf{liquidaR}.
 
 \hypertarget{pruebas-de-bondad-de-ajuste}{%
 \section{Pruebas de Bondad de
@@ -548,8 +543,8 @@ los datos.
 \subsection{Contrastes de Hipótesis.}\label{contrastes-de-hipotesis.}}
 
 En esta sección aborda lo concerniente a los contrastes de hipótesis,
-entendiendose como un sistema de toma de decisiones entre una variedad
-de métodos estadisticos. Para la siguientes pruebas se definen las
+entendiéndose como un sistema de toma de decisiones entre una variedad
+de métodos estadísticos. Para la siguientes pruebas se definen las
 hipótesis a contrastar:
 
 \(H_0:\)La Data proviene de una Población con Distribución
@@ -577,7 +572,7 @@ datos ordenados. El Estadístico de Contraste utilizado es:
 \[D_n= max|F(x_i)-F_n (x_i ) |\]
 
 Es decir, el extremo superior entre las diferencias de valor absoluto
-entre FDE y la funcion de distribución teórica. La hipótesis con
+entre FDE y la función de distribución teórica. La hipótesis con
 respecto a la forma de distribución se rechaza \(H_0\) si el estadístico
 de prueba, \(D_n\), es mayor que el valor crítico obtenido a partir de
 una tabla, o lo que es lo mismo, si el \(p\) valor es menor que el nivel
@@ -699,7 +694,7 @@ siguientes características:
   El Mayor valor de la \textbf{Función de Máxima Verosimilitud}.
 \end{itemize}
 
-A tráves de los siguientes ejemplos recorreremos la batería de Pruebas
+A través de los siguientes ejemplos recorreremos la batería de Pruebas
 Estadísticas con las Distribuciones de Probabilidades de Pérdidas
 asociadas a los procesos de caracterización matemática soportado por la
 \textbf{Teoría Matemática del Riesgo}.
@@ -708,7 +703,7 @@ asociadas a los procesos de caracterización matemática soportado por la
 \subsubsection{Criterios de Información de Akaike (AIC) y Bayesiano
 (BIC).}\label{criterios-de-informacion-de-akaike-aic-y-bayesiano-bic.}}
 
-Ambos criterios estan basados en la penalización del Logarítmo de la
+Ambos criterios están basados en la penalización del Logaritmo de la
 Verosimilitud. Considerando \(np\) el número de parámetros del modelo
 ajustado, tenemos la forma:
 
@@ -719,15 +714,15 @@ ajustado, tenemos la forma:
 \section{Inferencia Paramétrica}\label{inferencia-parametrica}}
 
 La Inferencia Paramétrica es el tratamiento con técnicas de estimación
-de parámetros desconocidos dada una distribución selecionada. Asumimos
+de parámetros desconocidos dada una distribución seleccionada. Asumimos
 que \((x_1, ..., x_n)\) son realizaciones de una Variable aleatoria
-\((X_1, ...,X_2)\) tal que \(X_i\) son independientes e identicamente
+\((X_1, ...,X_2)\) tal que \(X_i\) son independientes e idénticamente
 distribuidas y concuerdan con la variable aleatoria genérica \(X\). Esta
 variable aleatoria \(X\) tiene una Función de Distribución
 \(F(.;\theta)\) para \(\theta \in \Theta \subset \mathbb{R}^d\) donde
 \(d\) es el número de parámetros a estimar. A continuación describiremos
-un conjunto de metódos o técnicas que nos permiten obtener los
-parámetrtos optimos de la distribución que representa los datos con
+un conjunto de métodos o técnicas que nos permiten obtener los
+parámetros óptimos de la distribución que representa los datos con
 criterio estadístico.
 
 El primero de los métodos es la estimación a través de la función máximo
@@ -738,10 +733,10 @@ verosímil, este método esta descrito en capítulo anterior.
 Cuantiles}\label{estimacion-por-coincidencia-de-cuantiles}}
 
 Bajo este método la distribución paramétrica se ajusta haciendo
-coincidir los Cuantiles de la distribución teórica seleccdionada con los
+coincidir los Cuantiles de la distribución teórica seleccionada con los
 Cuantiles de la distribución empírica. esto es:
 
-\[F^{-1}(p_k;\theta)=Q_{n,p_k}\] para \(k=1, ...,d\) and \(Q_{n,p_{k}}\)
+\[F^{-1}(p_k;\theta)=Q_{n,p_k}\] para \(k=1, ...,d\) y \(Q_{n,p_{k}}\)
 son los cuantiles empíricos para probabilidades específicas. En algunas
 ocasiones es posible conseguir una fórmula cerrada para esta condición,
 por ejemplo si consideramos la distribución exponencial
@@ -757,9 +752,9 @@ trabajo.
 \subsection{Estimación por Coincidencia de
 Momentos}\label{estimacion-por-coincidencia-de-momentos}}
 
-La Estimación por Coincidencia de Momentos es comunmente utilizada para
+La Estimación por Coincidencia de Momentos es comúnmente utilizada para
 ajustar distribuciones paramétricas. Esta metodología consiste en
-encontrar el valor del parametro \(\theta\) que coincida con el primer
+encontrar el valor del parámetro \(\theta\) que coincida con el primer
 momento crudo de la distribución teórica (distribución paramétrica) con
 el correspondiente momento de la distribución empírica. Esto es:
 
@@ -791,7 +786,7 @@ Cramér-von Mises está definida como:
 
 \[D(\theta)=\int_{-\infty}^{\infty}(F_n(x)-F(x;\theta))^2dx\]
 
-y en términos practicos es estimado con la siguiente formula
+y en términos prácticos es estimado con la siguiente formula
 
 \[\hat{D}(\theta)=\frac{1}{12n}+\sum_{i=1}^{n}\left(F(x_i ;\theta)-\frac{2i-1}{2n}\right)^2\]
 finalmente el método consiste en encontrar el valor de \(\theta\) que
@@ -866,7 +861,7 @@ Sea \(X\) y \(Y\) 2 Variables Aleatorias de Pérdida. Entonces:
 
 \hypertarget{principio-de-la-desviacion-estandar.}{%
 \subsection{\texorpdfstring{\textbf{Principio de la Desviación
-Estandar.}}{Principio de la Desviación Estandar.}}\label{principio-de-la-desviacion-estandar.}}
+Estándar.}}{Principio de la Desviación Estándar.}}\label{principio-de-la-desviacion-estandar.}}
 
 El Principio de la Desviación Estándar es una medida de incertidumbre de
 una Distribución de Probabilidad. Si se tiene una Distribución de
@@ -910,7 +905,7 @@ El cálculo del VaR requiere la cuantificación de la distribución de los
 retornos. Uno de los enfoques es asumir que los retornos de un Activo (o
 Pasivo) en particular sigue una distribución de probabilidad específica,
 por ejemplo la distribución normal este acercamiento es el denominado
-como " \textbf{Paramétrico} ", asímismo, requiere asumir parámetros
+como " \textbf{Paramétrico} ", asimismo, requiere asumir parámetros
 necesarios que caracterizan los datos dentro de la distribución.
 
 Otro de los acercamientos asume el cálculo a través de la proyección de
@@ -1022,7 +1017,7 @@ luego tenemos la función de distribución acumulada
 
 \[F_{X}(x) = \phi(x) = \mathbb{P}(X \leq x) = \frac{1}{\sqrt{2 \pi \sigma}} = \int_{-\infty}^{x}e^{\frac{-x^2}{2}}\]
 
-entonces utilizamos el principio de la desviación standart
+entonces utilizamos el principio de la desviación estándar
 
 \[Y = \mu + \sigma X\]
 
@@ -1055,7 +1050,7 @@ lo que resulta:
 \subsubsection{\texorpdfstring{\textbf{VaR
 Cauchy:}}{VaR Cauchy:}}\label{var-cauchy}}
 
-Dado que la \textbf{Bondad de Ajuste} de como resultado la distribuyción
+Dado que la \textbf{Bondad de Ajuste} de como resultado la distribución
 Cauchy tenemos entonces su función de densidad viene dada por:
 
 \[f(x)= \frac{1}{\pi(1+x^2)}\]
@@ -1075,7 +1070,7 @@ luego asumimos los siguientes parámetros:
 \(\mu\): como parámetro de locación. \(\sigma\) como parámetro de
 escala.
 
-para determinar el VaR aplicamos el principio de la desviación standart
+para determinar el VaR aplicamos el principio de la desviación estándar
 
 \[\begin{array}{rl}  
 &\displaystyle  \mathbb{P}[\mu + \sigma X \leq VaR_{p}(x)] = p\\
@@ -1104,7 +1099,7 @@ y su función de distribución:
 
 \[F(X)=\phi(\frac{\log(X)-\mu}{\sigma})\]
 
-luego aplicando el principio de la desviación standart y la definición
+luego aplicando el principio de la desviación estándar y la definición
 de Valor en Riesgo tenemos que:
 
 \[Y = \mu + \sigma \log(X)\]
@@ -1136,7 +1131,7 @@ y su función de Distribución:
 
 \[F_X(X)= 1-e^{-\lambda X}\]
 
-luego aplicando el principio de la Desviación Standart tenemos que
+luego aplicando el principio de la Desviación Estándar tenemos que
 
 \[Y = \mu + \sigma X\]
 
@@ -1253,7 +1248,7 @@ elípticas, en cambio la distribución exponencial no lo es.
 Una de las características deseables de esta familia de distribuciones
 probabilísticas es que tiene soporte real, es decir tienen soporte tanto
 positivo como negativo, a pesar que las distribuciones que poseen esta
-caraterística no son usadas frecuentemente en modelaje de pérdidas,
+característica no son usadas frecuentemente en modelaje de pérdidas,
 podrían ser usadas en el modelaje y caracterización de variables
 aleatorias tales como la tasa de retorno, tasas de rendimiento ya que
 toman valores positivos y negativos además las mismas también son
@@ -1336,7 +1331,7 @@ G(x) &\displaystyle=\frac{1}{2}\int_{0}^{x}g(u)du\\
 \end{array}\]
 
 luego aplicando la solución de las distribuciones elípticas para el
-cáculo del TVaR tenemos que:
+cálculo del TVaR tenemos que:
 
 \[TVaR_p(x)= \mu + \lambda \sigma^2\]
 
@@ -1349,8 +1344,8 @@ lo que resulta:
 \[TVaR_p(x)= \mu + \frac{1}{2} \left[\frac{ \frac{1}{\sigma}\phi\left(\frac{VaR_p(x)-\mu}{\sigma}\right)}{\frac{1}{\sqrt{2\pi}+\phi\left(\frac{VaR_p(x)-\mu}{\sigma}\right)}}\frac{ \frac{1}{\sigma}\phi\left(\frac{VaR_p(x)-\mu}{\sigma}\right)}{\bar{F}(\frac{VaR_p(x)-\mu}{\sigma})} \right]\]
 
 Otra forma de calcular el TVaR consiste en utilizar una generalización
-de la distribución normal, pero solo extendiendolo a las variables
-aleatorias que tenga soporte positivo unicamente. Dicha generalización
+de la distribución normal, pero solo extendiéndolo a las variables
+aleatorias que tenga soporte positivo únicamente. Dicha generalización
 considera la familia exponencial cuyos modelos de dispersión son
 \textbf{Familia Exponencial de Dispersión Aditiva} y \textbf{Familia
 Exponencial de Dispersión Reproductiva}, ( \textbf{AEDF} ) y (
@@ -1364,7 +1359,7 @@ rol que juega el inverso del parámetro de dispersión \(\lambda\).
 Una Variable Aleatoria X tiene una distribución que viene de una
 \textbf{Familia Exponencial de Dispersión Aditiva} y \textbf{Familia
 Exponencial de Dispersión Reproductiva} respectivamente, si su función
-de densidad se puede escribir en términos de los parametros \(\theta\) y
+de densidad se puede escribir en términos de los parámetros \(\theta\) y
 \(\lambda\) con la siguiente forma:
 
 AEDF \[f(x;\theta, \lambda)=e^{\theta x-\lambda k(\theta)}q(x;\lambda)\]
@@ -1479,7 +1474,7 @@ donde
 \subsubsection{\texorpdfstring{\textbf{TVaR
 Normal:}}{TVaR Normal:}}\label{tvar-normal}}
 
-se puede demostra que la distribución normal es miembro de la
+se puede demostrar que la distribución normal es miembro de la
 \textbf{Familia Exponencial de Dispersión Reproductiva} ya que si
 observamos su densidad
 
@@ -1577,7 +1572,7 @@ Corrientistas), está sería una de las principales consecuencias de las
 denominadas \textbf{Corridas Bancarias}.
 
 La estrategia del Riesgo de Liquidez se fundamenta en determinar en que
-grado la adquisición y mantenimiento de activos iliquidos es aceptable,
+grado la adquisición y mantenimiento de activos ilíquidos es aceptable,
 considerando los términos de evaluación, haciendo énfasis en el corto
 plazo ya que un déficit de liquidez acarrearía una insuficiencia en las
 reservas estatutarias e índices de solvencia obligatorias bajo las
@@ -1744,7 +1739,7 @@ Institución Financiera.
 En el marco de la fase de monitoreo del riesgo de liquidez, el Comité de
 Riesgos podrá solicitar las actas de las reuniones de los otros comités,
 creados en la Institución Financiera (ALCO, de Crédito, de Tesorería e
-Inversiones, y otros), con el objeto de verifi car que las
+Inversiones, y otros), con el objeto de verificar que las
 recomendaciones e instrucciones emanadas del Comité de Riesgos, con
 relación al riesgo de liquidez, hayan sido incorporadas por las áreas
 comerciales o de negocios. Los exámenes practicados por la Unidad de
@@ -1784,7 +1779,7 @@ aspectos:
   receptores.
 \item
   La definición expresa del contenido y la periodicidad del flujo de la
-  información. El establecimiento de mecanismos de verifi cación del
+  información. El establecimiento de mecanismos de verificación del
   cumplimiento de las políticas de divulgación.
 \end{itemize}
 
@@ -1793,16 +1788,16 @@ para estructurar un buen sistema de administración de riesgos y alcanzar
 los objetivos de minimización de pérdidas para la entidad.
 
 En el caso específico del riesgo de liquidez, el sistema de información
-debe ser lo sufi cientemente flexible para brindar toda la información
+debe ser lo suficientemente flexible para brindar toda la información
 que se requiera para cumplir con todas las etapas de la gestión de
-riesgos: identifi car, medir, monitorear, controlar, mitigar y divulgar
+riesgos: identificar, medir, monitorear, controlar, mitigar y divulgar
 el riesgo de liquidez. Así por ejemplo, como se pudo apreciar en la
 sección sobre metodologías, el análisis de brechas de liquidez requiere
-la clasifi cación de activos y pasivos por bandas de renovación o
+la clasificación de activos y pasivos por bandas de renovación o
 vencimiento; por lo tanto, el sistema de información de la EIF debe
 tener la capacidad de procesar automáticamente la información, de manera
-de clasifi carla por bandas, con base en una fecha de corte o de
-análisis determinado.
+de clasificarla por bandas, con base en una fecha de corte o de análisis
+determinado.
 
 Dicho sistema debe permitir, además, incorporar los porcentajes de
 renovación, precancelación, morosidad, etc. que la Institución
@@ -1831,11 +1826,11 @@ operativo del mismo.
 
 En Venezuela la divulgación y comunicación oficial de los riesgos en
 particular del riesgo de liquidez está regulada por la disposición
-136.15 la cual indica que la información debeb ser divulgada a través de
+136.15 la cual indica que la información debe ser divulgada a través de
 un mecanismo electrónico denominado \textbf{Archivo de Transmisión 28} o
 el \textbf{AT28}, el cual contiene información detallada de todos los
 aspectos del riesgo de liquidez como los ratios de liquidez, las brechas
-Contractuales, Esperadas y Estresadas así como la razon de riesgo de
+Contractuales, Esperadas y Estresadas así como la razón de riesgo de
 liquidez y su distribución proporcional con respecto a la cartera.
 
 El ente que centraliza la información es la \textbf{Superintendencia de
@@ -1849,9 +1844,9 @@ Las bandas de liquidez o GAP de liquidez es una estimación de la
 estructura del riesgo de liquidez proyectada a lo largo de un período
 con el objeto de realizar una estimación fija del mismo.
 
-para cálcularla debemos pasar por un proceso estádistico que implica un
+para calcularla debemos pasar por un proceso estadístico que implica un
 conjunto de contrastes de hipótesis con el fin de establecer o
-determinar la distribución probabilistaca asociada a la población tipo,
+determinar la distribución probabilística asociada a la población tipo,
 \(VaR\) y \(TVaR\).
 
 El análisis de las brechas de liquidez tiene como propósito establecer a
@@ -1899,7 +1894,7 @@ R_{t}(n) &\displaystyle= \left(1+R_{t}\right) \left(1+R_{t-1}\right) \left(1+R_{
 
 considerando que los intereses y la tasa de cambio es considerada
 continuamente compuesta podemos expresar los retornos en términos de su
-serie de tiempo diferenciada logaritmica:
+serie de tiempo diferenciada logarítmica:
 
 \[Y_{t}(n)=\ln(1+R_{t})=\ln \left(\frac{P_{t}}{P_{t-1}}\right)\]
 
@@ -1966,7 +1961,7 @@ Si la brecha de liquidez acumulada a un determinado plazo es negativa,
 es decir, si el saldo acumulado de diferencias entre activo y pasivo es
 deficitario, este monto es considerado como liquidez en riesgo.
 
-Por tanto, el análisis de brechas de líquidez requiere que la
+Por tanto, el análisis de brechas de liquidez requiere que la
 Institución Financiera adopte políticas en relación a la fijación de
 límites de exposición para la brecha de liquidez acumulada negativa, a
 nivel de moneda y en forma consolidada, pudiendo establecerse como un
@@ -2041,7 +2036,7 @@ de Contingencias.
 \hypertarget{enfoque-actuarial}{%
 \section{Enfoque Actuarial}\label{enfoque-actuarial}}
 
-Una de las persepectivas más retadoras de este trabajo es resolver la
+Una de las perspectivas más retadoras de este trabajo es resolver la
 caracterización de eventos para la cuantificación del riesgo de liquidez
 asumiendo que el horizonte temporal de las misma es dinámico. Desde el
 enfoque tradicional el horizonte temporal se considera estático o esta
@@ -2051,7 +2046,7 @@ número de eventos, esto es, significa que para considerar el saldo o el
 monto en retiros asumiremos una variable aleatoria compuesta en donde
 tanto la severidad como el numero de eventos, dando paso al modelo de
 pérdida agregada. Además con la aplicación de este modelo y la
-perspectiva integral en materia de riesgo queda sentada la basde para la
+perspectiva integral en materia de riesgo queda sentada la base para la
 construcción de un modelo de Ruina Bancario cuya propuesta abordaremos
 al final de este capítulo.
 
@@ -2059,24 +2054,24 @@ al final de este capítulo.
 \subsection{Modelo de Pérdida
 Agregado}\label{modelo-de-perdida-agregado}}
 
-En el suscinto modelo se calcula el monto total de la partida a través
-de la suma compuesta de variables aleatorias independientes, y para esta
+En el sucinto modelo se calcula el monto total de la partida a través de
+la suma compuesta de variables aleatorias independientes, y para esta
 suma compuesta hay que determinar la distribución. Esto es:
 
 \[S=\sum_{i=1}^{N}X_i~~con~S=0 ~si~N=0\]
 
 donde \(N\) es el número de retiros de las cuentas y \(X_i\) es el monto
 (severidad) de cada retiro la cual se asume estrictamente positivo por
-como est'a definida la variable aleatoria.
+como está definida la variable aleatoria.
 
 Estudiaremos la función de distribución de \(S\) y luego analizaremos
-una version de la misma a tiempo continuo a través del marco de la
+una versión de la misma a tiempo continuo a través del marco de la
 teoría de ruina.
 
-El suspuesto clasico del monto \(S\) requiere que \(N\) sea
-independiente del monto de los retiros. tambien asumimos que los \(X_i\)
-son variables aleatorias independientes e identicamente distribuidas,
-luego la función de distribución queda de la siguiente manera:
+El supuesto clásico del monto \(S\) requiere que \(N\) sea independiente
+del monto de los retiros. también asumimos que los \(X_i\) son variables
+aleatorias independientes e idénticamente distribuidas, luego la función
+de distribución queda de la siguiente manera:
 
 \[F_{S}(s)=\mathbb{P}(N=n)\mathbb{P}(X_1+...+X_n\leq s)=\sum_{i=0}^{+\infty}\mathbb{P}(N=n)F_{X}^{*n}(s)\]
 
@@ -2101,7 +2096,7 @@ probabilidades.
 El criterio de parada de esta recursión es cuando la suma de las
 probabilidades esté arbitrariamente cercano a 1 se detiene la misma.
 
-En la prática la variable del monto de los retiros no es discreta, sin
+En la práctica la variable del monto de los retiros no es discreta, sin
 embargo, pueden ser discretizadas.
 
 Para realizar la discretización de la variable existen tres métodos, se
@@ -2115,7 +2110,7 @@ la diferencia hacia atrás, de la siguiente manera:
 
 \[\bar{f}(x)=F_X(x)-F_X(x-h)\]
 
-Asímismo, la discretización insesgada se calcula:
+Asimismo, la discretización insesgada se calcula:
 
 \[\bar{f}(x)=(2\mathbb{E}(X\wedge x)-\mathbb{E}(X\wedge x-h)-\mathbb{E}(X \wedge x+h))/h\]
 donde \(h\)es el paso o amplitud de discretización.
@@ -2131,7 +2126,7 @@ Esta aproximación viene dada por:
 
 \[F_S(x) \approx \Phi\left(\frac{x-\mathbb{E}(S)}{\sigma(S)}\right)\]
 
-Asímismo, la aproximación Normal Power viene dada por:
+Asimismo, la aproximación Normal Power viene dada por:
 
 \[F_S(x) \approx \Phi\left(-\frac{3}{sk(S)}+\sqrt{\frac{9}{sk(S)}+1+\frac{6}{sk(S)}\frac{x-\mathbb{E}(S)}{\sigma(S)}}\right)\]
 
@@ -2143,17 +2138,16 @@ donde
 \subsubsection{Teoría de Ruina}\label{teoria-de-ruina}}
 
 La Teoría de Ruina se trata de un procesos estocástico relacionado o
-vinculado con la salud de ciertas entidades financieras, aseguradoas y
-de inversión. En el proceso se caracterizan las reservas de riesgo, en
-el caso bancario, serían reservas de dinero asociados con los créditos,
-el encaje legal, provisiones tanto genéricas como específicas. Como
-modelo inicial consideramos dicha reserva de riesgo esta representada
-por:
+vinculado con la salud de ciertas entidades financieras, asegurados y de
+inversión. En el proceso se caracterizan las reservas de riesgo, en el
+caso bancario, serían reservas de dinero asociados con los créditos, el
+encaje legal, provisiones tanto genéricas como específicas. Como modelo
+inicial consideramos dicha reserva de riesgo esta representada por:
 
 \[U_t=u+ct-\sum_{i=1}^{N_t}X_i\]
 
 donde \(u\) es la reserva inicial de las cuentas. \(c\) es la variación
-máxima volatil o VaR de liquidez. \(X_i~~\forall i \geq1\) son los
+máxima volátil o VaR de liquidez. \(X_i~~\forall i \geq1\) son los
 montos de los retiros sucesivos. \(N_t~~\forall t \geq0\) es el proceso
 que describe como llegan los retiros, los mismo se asumen como un
 proceso de Poisson con intensidad lambda.
@@ -2161,35 +2155,331 @@ proceso de Poisson con intensidad lambda.
 En el futuro, o como propuesta de trabajo subsiguiente podemos desde
 este enunciado desarrollar una \textbf{Teoría de Riesgo Bancaria}
 
-\hypertarget{rliquidity}{%
-\section{Rliquidity}\label{rliquidity}}
+\hypertarget{paquete-liquidar.}{%
+\section{\texorpdfstring{Paquete
+\textbf{liquidaR}.}{Paquete liquidaR.}}\label{paquete-liquidar.}}
 
-\hypertarget{r-y-el-paquete-rriskdistribution}{%
-\subsubsection{\texorpdfstring{R y el Paquete
-\textbf{rriskDistribution}}{R y el Paquete rriskDistribution}}\label{r-y-el-paquete-rriskdistribution}}
+Como resultado de la investigación realizada durante este trabajo
+pudimos consolidar información y conocimiento suficiente como para
+enriquecer el área de evaluación del riesgo de liquidez en el ambiente
+bancario. Asimismo, el enfoque provisto desde la perspectiva actuarial
+dió paso a técnicas mas avanzadas que requerían más poder de cálculo, es
+por ello decidí implementar un paquete en R para este fin.
 
-El paquete \texttt{rriskDistributions} provee una colección de funciones
-para la estimación de parámetros de distribuciones discretas y continuas
-relacionadas con distribuciones de pérdida y con la teoría matemática
-del riesgo.
+El paquete \textbf{liquidaR}, contiene funciones que conforman el Marco
+de Riesgo de Liquidez desde la perspectiva Actuarial, la misma conforma
+un flujo fluido de trabajo en el cual se implementan desde los
+indicadores contables hasta la determinación del \textbf{VaR} basados en
+te´cnicas funcionales y simulación de variables aleatorias compouestas.
 
-la misma provee pruebas paramétricas de bondad de ajuste de
-distribuciones probabilísticas dado los datos o sus cuantiles. El
-algoritmo ajusta distribuciones sin necesidad de la sistencia del
-usuario y sin especificar ninguna familia de distribuciones.
+El paquete se puede instalar desde mi repositorio público de github,
+solo debe tipear en la cónsola de R:
 
-\hypertarget{r-y-el-paquete-vares}{%
-\subsubsection{\texorpdfstring{R Y el Paquete
-\textbf{VaRES}}{R Y el Paquete VaRES}}\label{r-y-el-paquete-vares}}
+\begin{verbatim}
+library(devtools)
+install_github("danrisk/pasantia", subdir = "liquidaR" )
+\end{verbatim}
 
-El Paquete de R denominado \textbf{VaRES}, calcula los Valores a Riesgo
-( \textbf{VaR}) y la Expectativa a Corto Plazo ( \textbf{ES}), que
-constituyen dos de las medidas más populares del Riesgo Financiero para
-más de 100 (cien) distribuciones paramétricas, incluyendo todas las
-comúnmente conocidas.
+\hypertarget{bibliografia}{%
+\section{Bibliografía}\label{bibliografia}}
 
-\#Bibliografía
+\begin{thebibliography}{Bibliografía}
 
-\#Anexos
+\bibitem{finance-econ-mathe}
+Oldrich A. Vasicek.
+\textit{Finance, economics and mathematics}.
+Wiley, United States of Ameriza, 2016.
+
+\bibitem{inmunize-portfolio}
+Balbás Alejandro and Ibáñez Alfredo.
+\textit{When can you inmunize a bond portfolio}.
+Journal of Banking \& Finance. Vol. 22, nº 12, December 1998, p. 1571-1595
+
+\bibitem{fund-inversiones}
+Gordon Alexander J., Sharpe William F. y Bailey Jeffery V.
+\textit{Fundamentos de inversiones Teoría y práctica}.
+Tercera edición. Editorial Pearson, Mexico 2003.
+
+\bibitem{merc-finan-estr-empre}
+Grinblatt Mark y Titman Sheridan.
+\textit{Mercados financieros y estrategia empresarial}.
+Segunda edición. Editorial McGRAW-HILL/INTERAMERICANA DE ESPAÑA, S. A. U, España 2003.
+
+\bibitem{gest-pasiv}
+Mascareñas Juan.
+\textit{La gestión pasiva de las carteras de renta fija}.
+Universidad Complutense de Madrid, 1991.
+
+\bibitem{inv-inst-r-f}
+Miguel Angel Martín Mato.
+\textit{Inversiones Instrumentos de renta fija, valoración de bonos y análisis de cartera}.
+Primera edicion, Editorial Pearson, México, 2007.
+
+\end{thebibliography}
+
+\hypertarget{anexos}{%
+\section{Anexos}\label{anexos}}
+
+\hypertarget{codigos-paquete-de-r-liquidar}{%
+\subsection{\texorpdfstring{Códigos paquete de R,
+\textbf{liquidaR}}{Códigos paquete de R, liquidaR}}\label{codigos-paquete-de-r-liquidar}}
+
+\hypertarget{carpeta-r}{%
+\subsubsection{\texorpdfstring{Carpeta
+\textbf{R/}}{Carpeta R/}}\label{carpeta-r}}
+
+\hypertarget{activosliquidos.r}{%
+\paragraph{ActivosLiquidos.R}\label{activosliquidos.r}}
+
+\begin{verbatim}
+#' Activos Liquidos.
+#'
+#' \code{ActLiquidos} Devuelve un data frame que continen los 
+#'   Activos Liquidos de Balance.
+#'
+#' This is a generic function: methods can be defined for it directly
+#' or via the \code{\link{Summary}} group generic. For this to work properly,
+#' the arguments \code{...} should be unnamed, and dispatch is on the
+#' first argument.
+#'
+#' @param Disp Vector que contiene la cuenta Disponibilidades.
+#' @param BCV Vector que contiene lo dispuesto en Encaje Legal.
+#' @param BOIFP Vector que contiene activos dispuestos en otros
+#'   bancos o instituciones financieras dentro del pais.
+#' @param BCE Vector que contiene activos dispuestos en bancos
+#'   corresponsales en el exterior.
+#' @param ITVPN Vector que contiene las inversiones en titulos
+#'   valores para negociar.
+#' @return Si todas los parametros estan definidos entonces la funcion
+#'   devuelve un data frame que contiene los activos liquidos 
+#'   necesarios para la evaluacion de los indicadores contable 
+#'   de liquidez.
+#'   
+
+ActLiquidos <- function(Disp, BCV, BOIFP, BCE, ITVPN){
+  
+  x <- cbind(Disp, BCV, BOIFP, BCE, ITVPN)
+  
+  return(x)
+}
+\end{verbatim}
+
+\hypertarget{descriptivasposicion.r}{%
+\paragraph{descriptivasPosicion.R}\label{descriptivasposicion.r}}
+
+\begin{verbatim}
+descriptivas_posicion <- function(x){
+  y <- summary(x)
+  return(y)
+}
+\end{verbatim}
+
+\hypertarget{frecuencia.r}{%
+\paragraph{frecuencia.R}\label{frecuencia.r}}
+
+\begin{verbatim}
+frecuencia <- function(x){
+  y <- table(x)
+  return(y)
+}
+\end{verbatim}
+
+\hypertarget{gap.r}{%
+\paragraph{GAP.R}\label{gap.r}}
+
+\begin{verbatim}
+GapLiq <- function(data, VaR){
+  
+  VaR7   <- data[length(data)]*VaR*sqrt(7)
+  VaR15  <- data[length(data)]*VaR*sqrt(15)  - VaR7
+  VaR30  <- data[length(data)]*VaR*sqrt(30)  - VaR15
+  VaR60  <- data[length(data)]*VaR*sqrt(60)  - VaR30
+  VaR90  <- data[length(data)]*VaR*sqrt(90)  - VaR60
+  VaR180 <- data[length(data)]*VaR*sqrt(180) - VaR90
+  VaR360 <- data[length(data)]*VaR*sqrt(360) - VaR180
+  VaR720 <- data[length(data)]*VaR*sqrt(720) - VaR360
+  
+  cbind(VaR7, VaR15, VaR30, VaR60, VaR90, VaR180, VaR360, VaR720)
+}
+\end{verbatim}
+
+\hypertarget{pasivoveninm.r}{%
+\paragraph{PasivoVenInm.R}\label{pasivoveninm.r}}
+
+\begin{verbatim}
+PasVenInm <- function(DepVista, DepAhorro, DPF30, ODPF){
+  
+  x <- cbind(DepVista, DepAhorro, DPF30, ODPF)
+  
+  return(x)
+}
+\end{verbatim}
+
+\hypertarget{racocap.r}{%
+\paragraph{RACOCAP.R}\label{racocap.r}}
+
+\begin{verbatim}
+RACOCAP <- function(MaySaldo, CartSaldo){
+  
+  L <- (sum(MaySaldo)/sum(CartSaldo))*100
+  
+  return(L)
+}
+\end{verbatim}
+
+\hypertarget{rale.r}{%
+\paragraph{RALE.R}\label{rale.r}}
+
+\begin{verbatim}
+RALE <- function(ActLiq, PasVenInm){
+  RALE7 <- sum(ActLiq[1:7])/sum(PasVenInm[1:7])*100
+  RALE15 <- sum(ActLiq[8:15])/sum(PasVenInm[8:15])*100
+  RALE30 <- sum(ActLiq[16:30])/sum(PasVenInm[16:30])*100
+  RALE60 <- sum(ActLiq[31:60])/sum(PasVenInm[31:60])*100
+  RALE90 <- sum(ActLiq[61:90])/sum(PasVenInm[61:90])*100
+  
+  L <- cbind(RALE7, RALE15, RALE30, RALE60, RALE90)
+  
+  return(L)
+}
+\end{verbatim}
+
+\hypertarget{ralea.r}{%
+\paragraph{RALEA.R}\label{ralea.r}}
+
+\begin{verbatim}
+RALEA <- function(ActLiqAj, PasVenInm){
+  RALEA7 <- sum(ActLiqAj[1:7])/sum(PasVenInm[1:7])*100
+  RALEA15 <- sum(ActLiqAj[8:15])/sum(PasVenInm[8:15])*100
+  RALEA30 <- sum(ActLiqAj[16:30])/sum(PasVenInm[16:30])*100
+  RALEA60 <- sum(ActLiqAj[31:60])/sum(PasVenInm[31:60])*100
+  RALEA90 <- sum(ActLiqAj[61:90])/sum(PasVenInm[61:90])*100
+  
+  L <- cbind(RALEA7, RALEA15, RALEA30, RALEA60, RALEA90)
+  
+  return(L)
+}
+\end{verbatim}
+
+\hypertarget{rendiajusdist.r}{%
+\paragraph{rendiajusdist.R}\label{rendiajusdist.r}}
+
+\begin{verbatim}
+rendiAjusDist <- function(x){
+  y <- useFitdist(diff(log(x)), show.output = FALSE)
+  return(y)
+}
+\end{verbatim}
+
+\hypertarget{rendimientos.r}{%
+\paragraph{rendimientos.R}\label{rendimientos.r}}
+
+\begin{verbatim}
+rendimientos <- function(x){
+  y <- diff(log(x))
+  return(y)
+}
+\end{verbatim}
+
+\hypertarget{resultadoajustado.r}{%
+\paragraph{resultadoajustado.R}\label{resultadoajustado.r}}
+
+\begin{verbatim}
+resultadoAjuste <- function(x){
+  y <- useFitdist(diff(log(x)))
+  z <- y$res.matrix
+  return(z)
+}
+\end{verbatim}
+
+\hypertarget{tvarl.r}{%
+\paragraph{TVaRL.R}\label{tvarl.r}}
+
+\begin{verbatim}
+TVaRL <- function(p, data, dist){
+  z <- rendiAjusDist(data)
+  y <- switch(dist, 
+         "Normal" = esnormal(p, as.numeric(z$fit.list$Normal$estimate[1]),as.numeric(z$fit.list$Normal$estimate[2])),
+         "Exponential" = esexponential(p, as.numeric(z$fit.list$Exponential$estimate[1])),
+         "Cauchy"    = esCauchy(p, as.numeric(z$fit.list$Cauchy$estimate[1]),as.numeric(z$fit.list$Cauchy$estimate[2])),
+         "Logistic"  = eslogistic(p, as.numeric(z$fit.list$Logistic$estimate[1]),as.numeric(z$fit.list$Logistic$estimate[2])),
+         # "Beta"      =c(VARINBET_TEXT,
+         #                NULL,
+         #                VARTINBET_TEXT,
+         #                NULL ),
+         # "Chi-square"=c(VARINCHC_TEXT,
+         #                NULL,
+         #                VARTINCHC_TEXT,
+         #                NULL),
+         "Uniform"   =esuniform(p, as.numeric(z$fit.list$Uniform$estimate[1]), as.numeric(z$fit.list$Uniform$estimate[2])),
+         "Gamma"     =esGamma(p, as.numeric(z$fit.list$Gamma$estimate[1]), as.numeric(z$fit.list$Gamma$estimate[2])),
+         "Lognormal" =eslognorm(p, as.numeric(z$fit.list$Lognormal$estimate[1]), as.numeric(z$fit.list$Lognormal$estimate[2])),
+         "Weibull"   =esWeibull(p, as.numeric(z$fit.list$Weibull$estimate[1]),as.numeric(z$fit.list$Weibull$estimate[2])),
+         "F"         =esF(p, as.numeric(z$fit.list$F$estimate[1]), as.numeric(z$fit.list$F$estimate[2])),
+         "Student"   =esT(p, as.numeric(z$fit.list$Student$estimate[1]))
+         # "Gompertz"  =c(VARINGOM_TEXT,
+         #                NULL,
+         #                VARTINGOM_TEXT,
+         #                NULL)
+  )
+  return(y)
+}
+\end{verbatim}
+
+\hypertarget{varcompuesto.r}{%
+\paragraph{VaRCompuesto.R}\label{varcompuesto.r}}
+
+\begin{verbatim}
+AgregadoVaR <- function(dataDisc, dataRet, distRet){
+  
+  pardiscreto <- as.numeric(mean(dataDisc))
+  z <- rendiAjusDist(dataRet)
+  parRetiros <- c(as.numeric(z$fit.list$distRet$estimate[1]), as.numeric(z$fit.list$distRet$estimate[2]))
+  mediaRetiros <- mnorm(1, parRetiros[1], parRetiros[2])
+  varRetiros <- mnorm(2, parRetiros[1], parRetiros[2])-mediaRetiros^2
+  AsimRetiros <- (mnorm(3, parRetiros[1], parRetiros[2])-3*mediaRetiros*varRetiros-mediaRetiros^3)/varRetiros^(3/2)
+  medDiscreto <- varDiscreto <- pardiscreto
+  AsiDiscreto <- 1/sqrt(pardiscreto)
+  MedAgregado <- medDiscreto*mediaRetiros
+  VarAgregado <- varDiscreto*(varRetiros + mediaRetiros^2)
+  AsiAgregado <- (AsiDiscreto*varDiscreto^(3/2)*mediaRetiros^3+ 3*varDiscreto*mediaRetiros*varRetiros+medDiscreto*AsimRetiros*varRetiros^(3/2))/VarAgregado^(3/2)
+  Fs.s <- aggregateDist("simulation", model.freq = expression(y=rpois(mean(dataDisc))), model.sev = expression(y=rnorm(parRetiros[1], parRetiros[2])), nb=1000)
+  VaR(Fs.s)
+}
+\end{verbatim}
+
+\hypertarget{varl.r}{%
+\paragraph{VaRL.R}\label{varl.r}}
+
+\begin{verbatim}
+VaRL <- function(p, data, dist){
+  z <- rendiAjusDist(data)
+  y <- switch(dist, 
+         "Normal" = varnormal(p, mu= as.numeric(z$fit.list$Normal$estimate[1]), sigma = as.numeric(z$fit.list$Normal$estimate[2])),
+         "Exponential" = varexponential(p, as.numeric(z$fit.list$Exponential$estimate[1])),
+         "Cauchy"    = varCauchy(p, as.numeric(z$fit.list$Cauchy$estimate[1]),as.numeric(z$fit.list$Cauchy$estimate[2])),
+         "Logistic"  = varlogistic(p, as.numeric(z$fit.list$Logistic$estimate[1]),as.numeric(z$fit.list$Logistic$estimate[2])),
+         # "Beta"      =c(VARINBET_TEXT,
+         #                NULL,
+         #                VARTINBET_TEXT,
+         #                NULL ),
+         # "Chi-square"=c(VARINCHC_TEXT,
+         #                NULL,
+         #                VARTINCHC_TEXT,
+         #                NULL),
+         "Uniform"   =varuniform(p, as.numeric(z$fit.list$Uniform$estimate[1]), as.numeric(z$fit.list$Uniform$estimate[2])),
+        "Gamma"     =varGamma(p, as.numeric(z$fit.list$Gamma$estimate[1]), as.numeric(z$fit.list$Gamma$estimate[2])),
+         "Lognormal" =varlognorm(p, as.numeric(z$fit.list$Lognormal$estimate[1]), as.numeric(z$fit.list$Lognormal$estimate[2])),
+         "Weibull"   =varWeibull(p, as.numeric(z$fit.list$Weibull$estimate[1]),as.numeric(z$fit.list$Weibull$estimate[2])),
+         "F"         =varF(p, as.numeric(z$fit.list$F$estimate[1]), as.numeric(z$fit.list$F$estimate[2])),
+         "Student"   =varT(p, as.numeric(z$fit.list$Student$estimate[1]))
+         # "Gompertz"  =c(VARINGOM_TEXT,
+         #                NULL,
+         #                VARTINGOM_TEXT,
+         #                NULL)
+  )
+    return(y)
+}
+\end{verbatim}
 
 \end{document}
