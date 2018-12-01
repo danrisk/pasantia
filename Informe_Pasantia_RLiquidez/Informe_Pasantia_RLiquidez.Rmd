@@ -1136,43 +1136,6 @@ library(devtools)
 install_github("danrisk/pasantia", subdir = "liquidaR" )
 ```
 
-
-
-# Bibliografía
-\begin{thebibliography}{}
-
-\bibitem{finance-econ-mathe}
-Oldrich A. Vasicek.
-\textit{Finance, economics and mathematics}.
-Wiley, United States of Ameriza, 2016.
-
-\bibitem{inmunize-portfolio}
-Balbás Alejandro and Ibáñez Alfredo.
-\textit{When can you inmunize a bond portfolio}.
-Journal of Banking \& Finance. Vol. 22, nº 12, December 1998, p. 1571-1595
-
-\bibitem{fund-inversiones}
-Gordon Alexander J., Sharpe William F. y Bailey Jeffery V.
-\textit{Fundamentos de inversiones Teoría y práctica}.
-Tercera edición. Editorial Pearson, Mexico 2003.
-
-\bibitem{merc-finan-estr-empre}
-Grinblatt Mark y Titman Sheridan.
-\textit{Mercados financieros y estrategia empresarial}.
-Segunda edición. Editorial McGRAW-HILL/INTERAMERICANA DE ESPAÑA, S. A. U, España 2003.
-
-\bibitem{gest-pasiv}
-Mascareñas Juan.
-\textit{La gestión pasiva de las carteras de renta fija}.
-Universidad Complutense de Madrid, 1991.
-
-\bibitem{inv-inst-r-f}
-Miguel Angel Martín Mato.
-\textit{Inversiones Instrumentos de renta fija, valoración de bonos y análisis de cartera}.
-Primera edicion, Editorial Pearson, México, 2007.
-
-\end{thebibliography}
-
 # Anexos
 
 ## Códigos paquete de R, __liquidaR__
